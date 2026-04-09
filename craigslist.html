@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craigslist Re-Design — Wooju Lee</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ─── SIDEBAR ─────────────────────────────────────────── -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
+      <circle r="5" fill="#C8A84B">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#oval-path"/>
+        </animateMotion>
+      </circle>
+      <defs>
+        <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z"/>
+      </defs>
+    </svg>
+  </div>
+
+  <a href="about.html"  class="nav-standalone">About</a>
+  <a href="resume.html" class="nav-standalone">Resume</a>
+
+  <div class="nav-section">
+    <span class="nav-label">UI/UX</span>
+    <ul class="nav-links">
+      <li><a href="sharefood.html">Share Food</a></li>
+      <li><a href="craigslist.html" class="active">Craigslist Redesign</a></li>
+      <li><a href="index.html">RePlate</a></li>
+      <li><a href="index.html">GOLAJO</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Interactive</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Pig game</a></li>
+      <li><a href="index.html">LIKELION @ UCD</a></li>
+      <li><a href="index.html">My collections</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Graphics</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Bibimbap</a></li>
+      <li><a href="index.html">Rex Orange County</a></li>
+      <li><a href="index.html">INFINITY</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Contact</span>
+    <ul class="nav-links">
+      <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</aside>
+
+<!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
+<header class="mobile-nav">
+  <div class="mobile-logo">
+    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
+      <circle r="5" fill="#C8A84B">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#oval-path"/>
+        </animateMotion>
+      </circle>
+    </svg>
+  </div>
+  <button class="hamburger" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-drawer" id="drawer">
+  <button class="drawer-close" id="closeDrawer">✕</button>
+  <a href="about.html"  class="nav-standalone" onclick="closeMenu()">About</a>
+  <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
+  <div class="nav-section">
+    <span class="nav-label">UI/UX</span>
+    <ul class="nav-links">
+      <li><a href="sharefood.html"  onclick="closeMenu()">Share Food</a></li>
+      <li><a href="craigslist.html" onclick="closeMenu()">Craigslist Redesign</a></li>
+      <li><a href="index.html"      onclick="closeMenu()">RePlate</a></li>
+      <li><a href="index.html"      onclick="closeMenu()">GOLAJO</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Interactive</span>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="closeMenu()">Pig game</a></li>
+      <li><a href="index.html" onclick="closeMenu()">LIKELION @ UCD</a></li>
+      <li><a href="index.html" onclick="closeMenu()">My collections</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Graphics</span>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
+      <li><a href="index.html" onclick="closeMenu()">Rex Orange County</a></li>
+      <li><a href="index.html" onclick="closeMenu()">INFINITY</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Contact</span>
+    <ul class="nav-links">
+      <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE CONTENT
+════════════════════════════════════════════════════════ -->
+<main class="main">
+
+  <!-- ── Page Header ──────────────────────────────────────── -->
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <h1>Craigslist Re-Design</h1>
+      <p class="proj-header-sub">
+        This project involved redesigning Craigslist with a modern feel that focuses on user interface, focusing on
+        enhancing accessibility, visual clarity, and intuitive navigation — all while keeping the platform 
+        more welcoming, usable, and relevant for today's diverse digital audience.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── All content inside .proj-body for consistent max-width + centering ── -->
+  <div class="proj-body">
+
+    <!-- ── Hero Image ─────────────────────────────────────── -->
+    <div class="proj-hero">
+      <img src="images/craigslist-home.png" alt="Craigslist Redesign hero" />
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         CONTEXT
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Context</h2>
+      <p class="proj-p">
+        How might we modernize the Craigslist website to improve user experience and functionality while maintaining
+        its core simplicity and familiarity, addressing key challenges such as cluttered navigation and small, lacking
+        features in order to meet the evolving needs of users in 2024 and beyond?
+      </p>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         RESEARCH GOALS
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Research Goals</h2>
+      <p class="proj-p">
+        To gain comprehensive insights into user behavior, preferences, and pain points with the current Craigslist
+        website as well as to identify opportunities for improvement that align with modern web design standards
+        while preserving the platform's core simplicity and functionality.
+      </p>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         USER SURVEYS
+         Three images stacked vertically, each full column width
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">User Surveys</h2>
+      <div class="proj-survey-stack">
+        <img src="images/craigslist-usersurvey.png"  alt="User survey charts 1" />
+        <img src="images/craigslist-usersurvey2.png" alt="User survey charts 2" />
+        <img src="images/craigslist-usersurvey3.png" alt="User survey charts 3" />
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         COMPETITIVE ANALYSIS
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Competitive Analysis</h2>
+      <p class="proj-p">
+        Based on user surveys, the most popular buying/selling apps among Craigslist usage aged (below) are:
+      </p>
+      <ol class="proj-ol">
+        <li>Nextdoor</li>
+        <li>Facebook Marketplace</li>
+        <li>eBay</li>
+        <li>Mercari</li>
+      </ol>
+      <div class="proj-img-wrap">
+        <img src="images/craigslist-competitive.png" alt="Competitive analysis" />
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         USER PERSONA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">User Persona</h2>
+      <div class="proj-img-wrap">
+        <img src="images/craigslist-userpersona.png" alt="User persona" />
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         INFORMATION ARCHITECTURE
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Information Architecture</h2>
+      <div class="proj-img-wrap">
+        <img src="images/craigslist-information-architecture.png" alt="Information architecture diagram" />
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         LOW-FIDELITY
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Low-Fidelity</h2>
+      <div class="proj-img-wrap">
+        <img src="images/craigslist-lowfi.png" alt="Low-fidelity wireframes" />
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         FINAL DESIGN
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Final Design</h2>
+      <div class="proj-img-wrap">
+        <img src="images/craigslist-hifi.png" alt="Final design screens" />
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         COLORS AND TYPE
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Colors and Type</h2>
+      <div class="proj-img-wrap">
+        <img src="images/craigslist-color.png" alt="Colors and type" />
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         TAKEAWAYS & NEXT STEPS
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Takeaways &amp; Next Steps</h2>
+      <p class="proj-p">
+        Throughout this redesign project, I gained valuable experience in both design thinking and practical execution.
+        I learned how to work efficiently within Figma, including components, constraints, and auto-layout for
+        responsive designs. Key takeaways include:
+      </p>
+      <ul class="proj-list">
+        <li>Discovered the importance of scaling user-targeted approaches to my own research to uncover real user goals and pain points and preferences.</li>
+        <li>Gained a deeper understanding of how elements (text, buttons, icons) impact the overall UI and creating better visuals for platforms like Craigslist, and identified ways to offer better user experiences.</li>
+        <li>Explored features that influenced tools, such as user verification badges, dark/light messaging UI, or internal redesigns.</li>
+        <li>Continuing conducting usability tests to refine these interactions, typography, and navigation systems.</li>
+        <li>Eventually, consider solutions that approach to modern Craigslist for a mobile app, content system to inform.</li>
+      </ul>
+      <p class="proj-p" style="margin-top:8px;">
+        With the current redesign exposure successfully used to Craigslist, there are several directions for further development.
+      </p>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         FIGMA LINK
+    ═══════════════════════════════════════════════════════ -->
+    <section class="proj-section">
+      <h2 class="proj-h2">Figma Link</h2>
+      <p class="proj-link">
+        <a href="https://www.figma.com/design/QdeH0a8uRzW2LFI1711C11/Craigslist-Project-Wooju-lee?node-id=38%3A16334&t=S0dYwNb3DC55nate-" target="_blank">
+          https://www.figma.com/design/QdeH0a8uRzW2LFI1711C11/Craigslist-Project-Wooju-lee?node-id=38%3A16334&amp;t=S0dYwNb3DC55nate-
+        </a>
+      </p>
+    </section>
+
+  </div><!-- /proj-body -->
+
+  <footer>wooju.lee77@gmail.com</footer>
+</main>
+
+
+<!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
+<script>
+document.getElementById('menuBtn').addEventListener('click', () =>
+  document.getElementById('drawer').classList.add('open'));
+document.getElementById('closeDrawer').addEventListener('click', closeMenu);
+function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
+</script>
+</body>
+</html>

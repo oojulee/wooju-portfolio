@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share Food — Wooju Lee</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── SIDEBAR ─────────────────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+        <circle r="5" fill="#C8A84B">
+          <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#oval-path" />
+          </animateMotion>
+        </circle>
+        <defs>
+          <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z" />
+        </defs>
+      </svg>
+    </div>
+
+    <a href="about.html" class="nav-standalone">About</a>
+    <a href="resume.html" class="nav-standalone">Resume</a>
+
+    <div class="nav-section">
+      <span class="nav-label">UI/UX</span>
+      <ul class="nav-links">
+        <li><a href="sharefood.html" class="active">Share Food</a></li>
+        <li><a href="index.html">Craigslist Redesign</a></li>
+        <li><a href="index.html">RePlate</a></li>
+        <li><a href="index.html">GOLAJO</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <span class="nav-label">Interactive</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Pig game</a></li>
+        <li><a href="index.html">LIKELION @ UCD</a></li>
+        <li><a href="index.html">My collections</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <span class="nav-label">Graphics</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Bibimbap</a></li>
+        <li><a href="index.html">Rex Orange County</a></li>
+        <li><a href="index.html">INFINITY</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <span class="nav-label">Contact</span>
+      <ul class="nav-links">
+        <li><a href="/cdn-cgi/l/email-protection#f1869e9e9b84df9d9494c6c6b1969c90989ddf929e9c">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
+  <header class="mobile-nav">
+    <div class="mobile-logo">
+      <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+        <circle r="5" fill="#C8A84B">
+          <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#oval-path" />
+          </animateMotion>
+        </circle>
+      </svg>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-drawer" id="drawer">
+    <button class="drawer-close" id="closeDrawer">✕</button>
+    <a href="about.html" class="nav-standalone" onclick="closeMenu()">About</a>
+    <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
+    <div class="nav-section">
+      <span class="nav-label">UI/UX</span>
+      <ul class="nav-links">
+        <li><a href="sharefood.html" onclick="closeMenu()">Share Food</a></li>
+        <li><a href="index.html" onclick="closeMenu()">Craigslist Redesign</a></li>
+        <li><a href="index.html" onclick="closeMenu()">RePlate</a></li>
+        <li><a href="index.html" onclick="closeMenu()">GOLAJO</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Interactive</span>
+      <ul class="nav-links">
+        <li><a href="index.html" onclick="closeMenu()">Pig game</a></li>
+        <li><a href="index.html" onclick="closeMenu()">LIKELION @ UCD</a></li>
+        <li><a href="index.html" onclick="closeMenu()">My collections</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Graphics</span>
+      <ul class="nav-links">
+        <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
+        <li><a href="index.html" onclick="closeMenu()">Rex Orange County</a></li>
+        <li><a href="index.html" onclick="closeMenu()">INFINITY</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Contact</span>
+      <ul class="nav-links">
+        <li><a href="/cdn-cgi/l/email-protection#e4938b8b8e91ca888181d3d3a48389858d88ca878b89">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+     PROJECT PAGE CONTENT
+════════════════════════════════════════════════════════ -->
+  <main class="main">
+
+    <!-- ── Page Header ──────────────────────────────────── -->
+    <div class="proj-header">
+      <div class="proj-header-inner">
+        <h1>Share Food</h1>
+        <p class="proj-header-sub">
+          The app aims to address food-resource inequity by connecting surplus food providers<br>
+          with individuals and communities in need, providing efficient and equitable distribution of resources.
+        </p>
+      </div>
+    </div>
+
+    <div class="proj-body">
+
+      <!-- ── Hero Image ─────────────────────────────────── -->
+      <div class="proj-hero">
+        <!--
+        Replace this placeholder with your hero image:
+        <img src="images/sharefood-hero.png" alt="Share Food hero" />
+      -->
+        <img src="images/sharefood-app.png" alt="Share Food" />
+      </div>
+
+
+      <!-- ══════════════════════════════════════════════════
+         INTRODUCTION
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Introduction</h2>
+
+        <p class="proj-p">
+          Share Food is an app designed to help tackle food insecurity and resource inequality in our communities.
+          Inspired by the Davis and Yolo region's efforts to make fresh food accessible to everyone, Share Food connects
+          people who need nutritious food with those who have surplus to share.
+        </p>
+
+        <h3 class="proj-h3">What Does Share Food Do?</h3>
+        <ul class="proj-list">
+          <li><strong>Find Free Food:</strong> Easily locate free food programs and resources in your area.</li>
+          <li><strong>Order Food Directly:</strong> Request and order available food items through the app at no cost.
+          </li>
+          <li><strong>Share and Donate:</strong> Prevent food waste by donating surplus food to neighbors in need.</li>
+          <li><strong>Learn to Cook:</strong> Access simple cooking video tutorials to make the most of the ingredients
+            you receive.</li>
+        </ul>
+
+        <h3 class="proj-h3">Why Share Food?</h3>
+        <p class="proj-p">
+          Food insecurity affects the health and well-being of many individuals and families. Share Food aims to reduce
+          this problem by making nutritious food more accessible and by fostering a community of sharing and support.
+        </p>
+
+        <h3 class="proj-h3">Our Goal</h3>
+        <p class="proj-p">
+          Our mission is to ensure that no one in our community suffers from food insecurity. By connecting people,
+          sharing resources, and providing helpful information, Share Food helps build a healthier and more equitable
+          future for everyone.
+        </p>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         RESEARCH
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Research</h2>
+
+        <h3 class="proj-h3">SWOT Analysis</h3>
+
+        <div class="proj-swot">
+
+          <!-- Strengths -->
+          <div class="proj-swot-block">
+            <h4 class="proj-h4">Strengths:</h4>
+            <ul class="proj-list">
+              <li><strong>Growing Awareness:</strong> More people and organizations recognize food and resource
+                inequity, building support for solutions.</li>
+              <li><strong>Active Organizations:</strong> Many groups are already fighting food insecurity, offering
+                chances for collaboration.</li>
+              <li><strong>Tech Advancement:</strong> Tools like apps, precision agriculture, and better logistics can
+                help distribute food more fairly.</li>
+            </ul>
+          </div>
+
+          <!-- Weaknesses -->
+          <div class="proj-swot-block">
+            <h4 class="proj-h4">Weaknesses:</h4>
+            <ul class="proj-list">
+              <li><strong>Deep-rooted Inequality:</strong> Tackling poverty, discrimination, and lack of education is
+                complex and slow.</li>
+              <li><strong>Limited Resources:</strong> Some regions lack enough funding and people to address the problem
+                fully.</li>
+              <li><strong>Complex Supply Chains:</strong> Global food systems are complicated, making it hard to track
+                and distribute resources fairly.</li>
+            </ul>
+          </div>
+
+          <!-- Opportunities -->
+          <div class="proj-swot-block">
+            <h4 class="proj-h4">Opportunities:</h4>
+            <ul class="proj-list">
+              <li><strong>Global Goals:</strong> The UN's Sustainable Development Goals (SDGs) encourage action on
+                hunger and resource access.</li>
+              <li><strong>Tech Innovation:</strong> New technology can improve how food and resources are shared and
+                distributed.</li>
+              <li><strong>Partnerships:</strong> Governments, businesses, and nonprofits can work together for greater
+                impact.</li>
+            </ul>
+          </div>
+
+          <!-- Threats -->
+          <div class="proj-swot-block">
+            <h4 class="proj-h4">Threats:</h4>
+            <ul class="proj-list">
+              <li><strong>Climate Change:</strong> Environmental issues can worsen food insecurity by affecting crops
+                and resources.</li>
+              <li><strong>Instability:</strong> Political and economic crises can disrupt food supply and distribution.
+              </li>
+              <li><strong>Resistance to Change:</strong> Some groups may resist new policies or changes that challenge
+                the status quo.</li>
+            </ul>
+          </div>
+
+        </div><!-- /proj-swot -->
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         USER PERSONA
+         Replace placeholders with your persona images.
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">User Persona</h2>
+
+        <!--
+        Two persona cards side by side.
+        To add images, replace each .proj-img-placeholder div with:
+          <img src="images/persona-1.png" alt="Persona 1" style="width:100%;border-radius:8px;" />
+      -->
+        <!-- 2×2 persona grid — all cards same height via object-fit:cover -->
+        <div class="proj-persona-grid">
+          <img src="images/persona1.png" alt="Persona 1" />
+          <img src="images/persona2.png" alt="Persona 2" />
+          <img src="images/persona3.png" alt="Persona 3" />
+          <img src="images/persona4.png" alt="Persona 4" />
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         IDEATION & WIREFRAME
+         Replace placeholder with your wireframe image(s).
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Ideation &amp; Wireframe</h2>
+
+        <!--
+        To add your wireframe image, replace the div below with:
+          <img src="images/sharefood-wireframe.png" alt="Wireframes" style="width:100%;border-radius:8px;" />
+      -->
+        <!-- Small originals displayed at natural size, centred side-by-side -->
+        <div class="proj-ideation-row">
+          <img src="images/ideation-sharefood.png" alt="Ideation" />
+          <img src="images/wireframe-sharefood.png" alt="Wireframe" />
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         USABILITY TESTING
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Usability Testing</h2>
+
+        <p class="proj-p">
+          We conducted a usability testing session using interactive prototypes with users who represented our key
+          user personas. The goal was to assess whether the app's core features aligned with user expectations and to
+          identify areas for improvement.
+        </p>
+
+        <h3 class="proj-h3">Key Feedback &amp; Improvements</h3>
+        <ul class="proj-list">
+          <li>"It would be helpful for donors and recipients to coordinate pickup."</li>
+          <li>→ Planned the integration of a secure in-app messaging system to allow smooth and safe communication
+            between users.</li>
+          <li>"It would be useful to bookmark or save food items I'm interested in."</li>
+          <li>→ Added a "Save for Later" feature, allowing users to track or get notified about specific items.</li>
+          <li>"The food images on the home screen are too small — I want to quickly scan what's available."</li>
+          <li>→ Adjusted the layout to display larger, cleaner preview images for better visual accessibility.</li>
+        </ul>
+
+        <p class="proj-p" style="margin-top:12px;">
+          These insights directly informed the next iterations of the wireframes and led to a noticeable improvement in
+          overall task success rates and user satisfaction.
+        </p>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         HIGH-FIDELITY
+         Replace placeholders with your Hi-Fi screen images.
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">High-Fidelity</h2>
+
+
+
+        <!-- Full-width, natural aspect ratio -->
+        <img src="images/hi-fi-sharefood.png" alt="High-Fidelity" class="proj-hifi-img" />
+
+
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         NUMBERED FEATURE SECTIONS
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+
+        <div class="proj-feature">
+          <p class="proj-feature-num">1. Sign Up</p>
+          <h4 class="proj-h4">Users can create an account by sharing their location to connect with nearby resources and
+            entering basic information such as name, phone number, profile photo, and consent form.</h4>
+          <p class="proj-p">"Connect with your community by signing up with location-sharing and a few quick details."
+          </p>
+        </div>
+
+        <div class="proj-feature">
+          <p class="proj-feature-num">2. Donate Food</p>
+          <h4 class="proj-h4">Users can create an account by sharing their location to connect with nearby resources and
+            writing basic information such as name, phone number, profile photo, and consent form.</h4>
+          <p class="proj-p">"Connect with your community by signing up with location-sharing and a few quick details."
+          </p>
+        </div>
+
+        <div class="proj-feature">
+          <p class="proj-feature-num">3. Receive Food</p>
+          <h4 class="proj-h4">Recipients can view food listings, mark items as favorites, choose quantities, and check
+            donor profiles and reviews for trust and transparency.</h4>
+          <p class="proj-p">"Find, save, and request food that suits your needs — quickly and safely."</p>
+        </div>
+
+        <div class="proj-feature">
+          <p class="proj-feature-num">4. User Review &amp; Report</p>
+          <h4 class="proj-h4">After exchanges, users can leave reviews and report inappropriate behavior to maintain a
+            safe, respectful community.</h4>
+          <p class="proj-p">"Build trust through honest reviews and protect the community with reporting tools."</p>
+        </div>
+
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         PROBLEM SOLVING
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Problem Solving</h2>
+
+        <p class="proj-p">
+          To address the issue of food waste and food insecurity within communities, Share Food was designed to
+          create a mutual support system. The goal was to minimize surplus food waste while enabling individuals
+          experiencing food insecurity to access free, nutritious food with ease and dignity. By connecting donors and
+          recipients through an app-friendly platform, the app fosters a community-driven ecosystem where members
+          help one another through shared resources.
+        </p>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════
+         FUTURE IMPROVEMENTS
+    ═══════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Future Improvements</h2>
+
+        <p class="proj-p">To ensure a more inclusive and safe environment, future updates should focus on:</p>
+        <ul class="proj-list">
+          <li>Strengthening community guidelines to protect users from discrimination and unfair treatment.</li>
+          <li>Limiting direct communication between donors and recipients to prevent misuse or discomfort.</li>
+          <li>Introducing a community recipe-sharing feature to encourage creative use of donated items.</li>
+          <li>Adding more community interaction tools, such as local message boards or event announcements, to deepen
+            engagement and build stronger local networks.</li>
+        </ul>
+      </section>
+
+    </div><!-- /proj-body -->
+
+    <footer><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+        data-cfemail="bec9d1d1d4cb90d2dbdb8989fed9d3dfd7d290ddd1d3">[email&#160;protected]</a></footer>
+  </main>
+
+  <!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <scr

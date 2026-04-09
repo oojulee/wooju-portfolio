@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Wooju Lee</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ─── SIDEBAR ─────────────────────────────────────────── -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
+      <circle r="5" fill="#C8A84B">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#oval-path"/>
+        </animateMotion>
+      </circle>
+      <defs>
+        <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z"/>
+      </defs>
+    </svg>
+  </div>
+
+  <a href="about.html"  class="nav-standalone">About</a>
+  <a href="resume.html" class="nav-standalone active">Resume</a>
+
+  <div class="nav-section">
+    <span class="nav-label">UI/UX</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Share Food</a></li>
+      <li><a href="index.html">Craigslist Redesign</a></li>
+      <li><a href="index.html">RePlate</a></li>
+      <li><a href="index.html">GOLAJO</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Interactive</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Pig game</a></li>
+      <li><a href="index.html">LIKELION @ UCD</a></li>
+      <li><a href="index.html">My collections</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Graphics</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Bibimbap</a></li>
+      <li><a href="index.html">Rex Orange County</a></li>
+      <li><a href="index.html">INFINITY</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Contact</span>
+    <ul class="nav-links">
+      <li><a href="/cdn-cgi/l/email-protection#077068686d72296b6262303047606a666e6b2964686a">Email</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</aside>
+
+<!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
+<header class="mobile-nav">
+  <div class="mobile-logo">
+    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
+      <circle r="5" fill="#C8A84B">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#oval-path"/>
+        </animateMotion>
+      </circle>
+    </svg>
+  </div>
+  <button class="hamburger" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-drawer" id="drawer">
+  <button class="drawer-close" id="closeDrawer">✕</button>
+  <a href="about.html"  class="nav-standalone" onclick="closeMenu()">About</a>
+  <a href="resume.html" class="nav-standalone active" onclick="closeMenu()">Resume</a>
+  <div class="nav-section">
+    <span class="nav-label">UI/UX</span>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="closeMenu()">Share Food</a></li>
+      <li><a href="index.html" onclick="closeMenu()">Craigslist Redesign</a></li>
+      <li><a href="index.html" onclick="closeMenu()">RePlate</a></li>
+      <li><a href="index.html" onclick="closeMenu()">GOLAJO</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Interactive</span>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="closeMenu()">Pig game</a></li>
+      <li><a href="index.html" onclick="closeMenu()">LIKELION @ UCD</a></li>
+      <li><a href="index.html" onclick="closeMenu()">My collections</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Graphics</span>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
+      <li><a href="index.html" onclick="closeMenu()">Rex Orange County</a></li>
+      <li><a href="index.html" onclick="closeMenu()">INFINITY</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Contact</span>
+    <ul class="nav-links">
+      <li><a href="/cdn-cgi/l/email-protection#760119191c03581a1313414136111b171f1a5815191b">Email</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ─── RESUME PAGE CONTENT ──────────────────────────────── -->
+<main class="main">
+
+  <div class="resume-header">
+    <h1>Wooju Lee</h1>
+  </div>
+
+  <div class="resume-content">
+
+    <!-- ── Full-width: Professional Summary ─────────────── -->
+    <section class="resume-section">
+      <h2 class="resume-section-title">Professional Summary</h2>
+      <div class="resume-summary">
+        <p>Student majoring in Design and Cognitive Science with hands-on experience in UX/UI and graphic design. Skilled in tools like Figma, Illustrator, and Photoshop, with a track record of leading impactful projects such as apps addressing food insecurity and social accessibility. Passionate about creating user-friendly solutions and eager to contribute to innovative design teams through an internship opportunity.</p>
+      </div>
+    </section>
+
+    <!-- ── Side-by-side row: Education (left) + Skills (right) -->
+    <div class="resume-edu-skills-row">
+
+      <!-- Education -->
+      <section class="resume-section">
+        <h2 class="resume-section-title">Education</h2>
+
+        <p class="resume-edu-name">University of California, Davis — Davis, CA</p>
+        <p class="resume-edu-degree">Bachelor of Arts in <strong>Design and Cognitive Science</strong></p>
+        <p class="resume-edu-gpa">(GPA: 3.8)</p>
+        <p class="resume-edu-meta">Dean's Honors List (Spring 2024 &amp; Winter 2025)</p>
+        <p class="resume-edu-meta">Expected: December 2025</p>
+        <p class="resume-edu-courses"><strong>Relevant Coursework:</strong> UI/UX Design, Graphic Design, Information Design,<br>Coding for Designers, Interactive Media I &amp; II, Letterforms &amp; Type</p>
+      </section>
+
+      <!-- Skills -->
+      <section class="resume-section resume-skills">
+        <h2 class="resume-section-title">Skills</h2>
+
+        <div class="skill-group">
+          <p class="skill-group-name">Visual</p>
+          <p class="skill-group-items">Illustrator, Photoshop, InDesign, Procreate, Rhino</p>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-name">Interactive</p>
+          <p class="skill-group-items">Figma, HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-name">Language</p>
+          <p class="skill-group-items">English (Bilingual), Korean (Native)</p>
+        </div>
+      </section>
+
+    </div><!-- /resume-edu-skills-row -->
+
+    <!-- ── Full-width: Experience ────────────────────────── -->
+    <section class="resume-section">
+          <h2 class="resume-section-title">Experience</h2>
+
+          <!-- LIKELION -->
+          <div class="resume-entry">
+            <p>
+              <span class="resume-entry-role">Head Designer</span>
+              <span class="resume-entry-company"> — LIKELION</span>
+            </p>
+            <span class="resume-entry-date">September 2023 – Present</span>
+            <ul class="resume-entry-bullets">
+              <li>Designed and managed <strong>social media</strong> posts, primarily promoting major projects and events to boost the group's visibility and support member recruitment.</li>
+              <li>Collaborated closely with other officers to plan various programs and set <strong>project directions</strong>, contributing to both the visual identity and overall strategy of the organization.</li>
+              <li>Trained team members on <strong>Figma</strong> fundamentals, including grid systems, color contrast, typeface sizing, and visual hierarchy, to improve design consistency and accessibility.</li>
+              <li>Provided constructive <strong>feedback</strong> to fellow designers, focusing on layout balance, <strong>readability</strong>, and alignment with brand identity, fostering a more cohesive and professional design output.</li>
+            </ul>
+          </div>
+
+          <!-- GovDeals Redesign -->
+          <div class="resume-entry">
+            <p>
+              <span class="resume-entry-role">UX UI Designer &amp; FrontEnd</span>
+              <span class="resume-entry-company"> — GovDeals Redesign</span>
+            </p>
+            <span class="resume-entry-date">November 2024 – Present</span>
+            <ul class="resume-entry-bullets">
+              <li>Collaborated with a cross-functional team including frontend, backend, and project management to redesign the GovDeals website, known for its outdated and unintuitive UI.</li>
+              <li>Designed improved <strong>wireframes</strong> and interactive <strong>prototypes</strong> in <strong>Figma</strong>, focusing on usability and accessibility.</li>
+              <li>Implemented front-end updates using <strong>HTML</strong> and <strong>JavaScript</strong> based on the redesigned UI to enhance user experience and interface consistency.</li>
+            </ul>
+          </div>
+
+          <!-- Share Food -->
+          <div class="resume-entry">
+            <p>
+              <span class="resume-entry-role">Project Leader &amp; UX UI Designer</span>
+              <span class="resume-entry-company"> — Share Food</span>
+            </p>
+            <span class="resume-entry-date">April 2024 – June 2024</span>
+            <ul class="resume-entry-bullets">
+              <li>Initiated and led a student-driven app project connecting students with surplus food providers to reduce food waste and address food insecurity.</li>
+              <li>Designed <strong>wireframes</strong> and <strong>prototypes</strong> in Figma, led development using <strong>React Native</strong>, and enhanced UX through <strong>usability testing</strong>, <strong>user interviews</strong>, and <strong>competitive analysis</strong>.</li>
+              <li>Participated in a <strong>designathon</strong> to further refine the app's design, incorporating mentorship feedback to enhance accessibility and user engagement.</li>
+            </ul>
+          </div>
+
+          <!-- Reservation App -->
+          <div class="resume-entry">
+            <p>
+              <span class="resume-entry-role">UX UI Designer</span>
+              <span class="resume-entry-company"> — Reservation App</span>
+            </p>
+            <span class="resume-entry-date">February 2024</span>
+            <ul class="resume-entry-bullets">
+              <li>Designed a senior-friendly transportation reservation app using <strong>Figma</strong> and custom <strong>illustrations</strong> tailored for elderly users, incorporating friendly visuals, large text, and high-contrast color palettes as part of a 24-hour online <strong>hackathon</strong>.</li>
+            </ul>
+          </div>
+
+          <!-- GOLAJO -->
+          <div class="resume-entry">
+            <p>
+              <span class="resume-entry-role">Project Leader &amp; UX UI Designer</span>
+              <span class="resume-entry-company"> — GOLAJO</span>
+            </p>
+            <span class="resume-entry-date">November 2023</span>
+            <ul class="resume-entry-bullets">
+              <li>Led a team in designing an AI-powered virtual try-on shopping app by conducting market research, building <strong>wireframes</strong> and <strong>prototypes</strong> in <strong>Figma</strong>, and producing a <strong>pitch deck</strong> and <strong>demo video</strong>.</li>
+              <li>Facilitated weekly 3–4 hour meetings to coordinate tasks, encourage collaboration, and simplify features based on team feedback to enhance usability.</li>
+              <li>Presented the completed project at an <strong>ideathon</strong> and advanced to the final round.</li>
+            </ul>
+          </div>
+
+        </section>
+
+    </section><!-- /Experience -->
+
+  </div><!-- /resume-content -->
+
+  <footer><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ed9a82828798c3818888dadaad8a808c8481c38e8280">[email&#160;protected]</a></footer>
+</main>
+
+<!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><scr

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RePlate — Wooju Lee</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── SIDEBAR ─────────────────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+        <circle r="5" fill="#C8A84B">
+          <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#oval-path" />
+          </animateMotion>
+        </circle>
+        <defs>
+          <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z" />
+        </defs>
+      </svg>
+    </div>
+
+    <a href="about.html" class="nav-standalone">About</a>
+    <a href="resume.html" class="nav-standalone">Resume</a>
+
+    <div class="nav-section">
+      <span class="nav-label">UI/UX</span>
+      <ul class="nav-links">
+        <li><a href="sharefood.html">Share Food</a></li>
+        <li><a href="craigslist.html">Craigslist Redesign</a></li>
+        <li><a href="replate.html" class="active">RePlate</a></li>
+        <li><a href="index.html">GOLAJO</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <span class="nav-label">Interactive</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Pig game</a></li>
+        <li><a href="index.html">LIKELION @ UCD</a></li>
+        <li><a href="index.html">My collections</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <span class="nav-label">Graphics</span>
+      <ul class="nav-links">
+        <li><a href="index.html">Bibimbap</a></li>
+        <li><a href="index.html">Rex Orange County</a></li>
+        <li><a href="index.html">INFINITY</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <span class="nav-label">Contact</span>
+      <ul class="nav-links">
+        <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
+  <header class="mobile-nav">
+    <div class="mobile-logo">
+      <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+        <circle r="5" fill="#C8A84B">
+          <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#oval-path" />
+          </animateMotion>
+        </circle>
+      </svg>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-drawer" id="drawer">
+    <button class="drawer-close" id="closeDrawer">✕</button>
+    <a href="about.html" class="nav-standalone" onclick="closeMenu()">About</a>
+    <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
+    <div class="nav-section">
+      <span class="nav-label">UI/UX</span>
+      <ul class="nav-links">
+        <li><a href="sharefood.html" onclick="closeMenu()">Share Food</a></li>
+        <li><a href="craigslist.html" onclick="closeMenu()">Craigslist Redesign</a></li>
+        <li><a href="replate.html" onclick="closeMenu()">RePlate</a></li>
+        <li><a href="index.html" onclick="closeMenu()">GOLAJO</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Interactive</span>
+      <ul class="nav-links">
+        <li><a href="index.html" onclick="closeMenu()">Pig game</a></li>
+        <li><a href="index.html" onclick="closeMenu()">LIKELION @ UCD</a></li>
+        <li><a href="index.html" onclick="closeMenu()">My collections</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Graphics</span>
+      <ul class="nav-links">
+        <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
+        <li><a href="index.html" onclick="closeMenu()">Rex Orange County</a></li>
+        <li><a href="index.html" onclick="closeMenu()">INFINITY</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Contact</span>
+      <ul class="nav-links">
+        <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+     PAGE CONTENT
+════════════════════════════════════════════════════════ -->
+  <main class="main">
+
+    <!-- ── Page Header ──────────────────────────────────────── -->
+    <div class="proj-header">
+      <div class="proj-header-inner">
+        <h1>RePlate</h1>
+        <p class="proj-header-sub">
+          RePlate is an app designed to connect food donors with recipients in need,
+          reducing food waste and addressing food insecurity by creating a simple,
+          community-driven platform for sharing surplus food.
+        </p>
+      </div>
+    </div>
+
+    <div class="proj-body">
+      <div><img src="images/replate-hero.png" alt="RePlate hero" /></div>
+
+
+
+      <!-- ══════════════════════════════════════════════════════
+         DESIGN
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="introduction">What?</h2>
+        <p>As a college student, it is hard to manage cooking, eating, and food waste.</p>
+
+        <h2 class="introduction">Why??</h2>
+        <ul>
+          <li>Busy schedule</li>
+          <li>Financial Reasons</li>
+          <li>Knowledge of cooking</li>
+        </ul>
+
+        <h2 class="introduction">How might we</h2>
+        <p>How might we help college students cook more efficiently, minimize food waste, and reduce food insecurity?
+        </p>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         USER PERSONA
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">User Persona</h2>
+
+        <div class="proj-split img-first">
+          <div class="proj-split-text">
+            <p class="proj-feature-title">Alex</p>
+            <p class="proj-p"><strong>Age:</strong> 28 &nbsp;|&nbsp; <strong>Location:</strong> Davis, CA<br>
+              <strong>Occupation:</strong> Graduate Student in Cognitive Science
+            </p>
+            <p class="proj-p">
+              Alex is a busy grad student who often skips meals due to financial stress. He is aware of food waste
+              issues on campus and wants a convenient way to access donated meals between classes.
+            </p>
+            <p class="proj-sub-h">Frustrations</p>
+            <ul class="proj-list">
+              <li>Doesn't know where to find free or low-cost food near campus.</li>
+              <li>Feels stigma around using food assistance programs.</li>
+              <li>Existing apps are too complicated or location-inaccurate.</li>
+            </ul>
+            <p class="proj-sub-h">Goals</p>
+            <ul class="proj-list">
+              <li>Quickly find nearby food donations with minimal effort.</li>
+              <li>Receive notifications when food is available close to him.</li>
+              <li>Feel part of a supportive community rather than charity.</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-persona.png" alt="User Persona" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:3/4;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>User Persona image</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         USER SURVEY
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">User Survey</h2>
+
+        <!-- Row 1: pie chart left + key findings right -->
+        <div class="proj-split img-first">
+          <div class="proj-split-text">
+            <p class="proj-feature-title">Key Findings</p>
+            <ul class="proj-list">
+              <li><strong>78%</strong> of respondents said they would use a food-sharing app if it were available.</li>
+              <li><strong>65%</strong> reported throwing away food at least once a week.</li>
+              <li><strong>52%</strong> said they would donate food if the process were simple enough.</li>
+              <li>Most users preferred a map-based interface to find nearby donations.</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-survey-pie.png" alt="Survey pie chart" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:1/1;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Survey pie chart</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Row 2: full-width bar chart -->
+        <div class="proj-img-wrap">
+          <!--
+          Replace with: <img src="images/replate-survey-bars.png" alt="Survey bar charts" />
+        -->
+          <div class="proj-img-placeholder" style="aspect-ratio:16/6;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+            <span>Survey bar charts</span>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Row 3: text left + chart right -->
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              Survey participants highlighted ease-of-use and real-time notifications as the most important features
+              for a food-sharing app. Privacy and anonymity for recipients was also a top concern.
+            </p>
+            <p class="proj-p">
+              <strong>Redesign needs to focus on:</strong>
+            </p>
+            <ol class="proj-ol">
+              <li>Trustworthy</li>
+              <li>Appealing to more people</li>
+            </ol>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-survey-results.png" alt="Survey results" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Survey results chart</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         INTERVIEW
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Interview</h2>
+
+        <div class="proj-split img-first">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              We conducted interviews with 8 participants across Davis and Sacramento who had either donated or
+              received food through community programs. Key insights surfaced around trust, convenience, and the
+              social dynamics of food sharing.
+            </p>
+            <p class="proj-sub-h">Key Quotes</p>
+            <ul class="proj-list">
+              <li>"I want to know the food is safe before I pick it up."</li>
+              <li>"I'd donate more often if someone could pick it up from me."</li>
+              <li>"I feel awkward asking for free food — it should feel more normal."</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-interview.png" alt="Interview insights" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Interview image</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         COMPETITIVE ANALYSIS
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Competitive Analysis</h2>
+
+        <div class="proj-img-wrap">
+          <!--
+          Replace with: <img src="images/replate-competitive.png" alt="Competitive analysis" />
+        -->
+          <div class="proj-img-placeholder" style="aspect-ratio:16/8;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+            <span>Competitive analysis — app comparison</span>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         IDEATION & LOW-FIDELITY
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Ideation &amp; Low-Fidelity</h2>
+
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              Based on our user research insights, we created solutions for possible features. We mapped out key
+              user flows — donating, browsing, requesting, and tracking — and sketched initial wireframe screens
+              to validate the core navigation structure before moving to digital tools.
+            </p>
+            <ul class="proj-list">
+              <li>Map-first home screen showing nearby donations</li>
+              <li>Simple two-step donate flow with photo upload</li>
+              <li>Anonymous request mode for recipients</li>
+              <li>In-app chat and pickup scheduling</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-lofi.png" alt="Low-fidelity wireframes" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Low-fidelity wireframes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         WIRE FIDELITY & USABILITY TESTING
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Wire Fidelity &amp; Usability Testing</h2>
+
+        <!-- Onboarding -->
+        <p class="proj-split-label">Onboarding</p>
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              Users can set up a profile quickly by selecting their role — donor, recipient, or volunteer — and
+              granting location access. Testers found the onboarding clear and completed it in under 90 seconds.
+            </p>
+            <p class="proj-sub-h">Usability Feedback:</p>
+            <ul class="proj-list">
+              <li>Users wanted a "skip for now" option on the notification prompt.</li>
+              <li>Profile photo felt optional — make it explicit.</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-wf-onboarding.png" alt="Onboarding wireframe" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Onboarding wireframe</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Browse -->
+        <p class="proj-split-label">Browse &amp; Request</p>
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              The browse screen shows a map with pins for available food items nearby. Tapping a pin reveals
+              a card with photo, distance, and estimated freshness. Users can request directly from the card.
+            </p>
+            <p class="proj-sub-h">Usability Feedback:</p>
+            <ul class="proj-list">
+              <li>Map pins needed clearer category icons (cooked vs. packaged).</li>
+              <li>Users wanted a list view alternative to the map.</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-wf-browse.png" alt="Browse wireframe" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Browse wireframe</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Donate -->
+        <p class="proj-split-label">Donate Food</p>
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              Donors post a listing in three steps: snap a photo, describe the item and quantity, then set a
+              pickup window. The simplified flow tested well — average completion time was 45 seconds.
+            </p>
+            <p class="proj-sub-h">Usability Feedback:</p>
+            <ul class="proj-list">
+              <li>Users wanted to duplicate a previous listing for recurring donations.</li>
+              <li>Expiry time field caused confusion — changed to a dropdown with presets.</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-wf-donate.png" alt="Donate wireframe" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Donate wireframe</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Notifications -->
+        <p class="proj-split-label">Notifications &amp; Messages</p>
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              Push notifications alert recipients when food they may like becomes available nearby. In-app
+              messaging lets donors and recipients coordinate pickup details without sharing personal contact info.
+            </p>
+            <p class="proj-sub-h">Usability Feedback:</p>
+            <ul class="proj-list">
+              <li>Users wanted granular notification controls (radius, food type).</li>
+              <li>Message thread needed a "food claimed" status banner.</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-wf-notifications.png" alt="Notifications wireframe" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Notifications wireframe</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Profile -->
+        <p class="proj-split-label">Profile</p>
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-p">
+              User profiles display donation history, ratings, and a trust badge system. Recipients can view a
+              donor's track record before accepting food, increasing platform-wide confidence.
+            </p>
+            <p class="proj-sub-h">Usability Feedback:</p>
+            <ul class="proj-list">
+              <li>Rating system needed clearer explanation of the criteria.</li>
+              <li>Users wanted to see total food weight donated as a personal impact stat.</li>
+            </ul>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-wf-profile.png" alt="Profile wireframe" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:4/3;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Profile wireframe</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         HIGH-FIDELITY
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">High-Fidelity</h2>
+
+        <p class="proj-p">
+          After incorporating usability testing feedback, we produced a high-fidelity prototype in Figma. The
+          final design uses a warm, approachable color palette with green as the primary accent, emphasizing
+          freshness and sustainability.
+        </p>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Feature 1: Find a Food Donor -->
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-feature-num">Find a Food Donor</p>
+            <p class="proj-p">
+              The home screen presents a live map of nearby food listings. Users can filter by food type,
+              distance, and dietary needs. Each listing shows a photo, distance, and time until expiry.
+            </p>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-hifi-find.png" alt="Find a Food Donor screen" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:9/16;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Find a Food Donor screen</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Feature 2: Receive a Donation -->
+        <div class="proj-split img-first">
+          <div class="proj-split-text">
+            <p class="proj-feature-num">Receive a Donation</p>
+            <p class="proj-p">
+              Tapping a food listing opens the detail view: photo gallery, ingredient list, quantity, pickup
+              instructions, and donor rating. One tap sends a request; the donor receives a notification instantly.
+            </p>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-hifi-receive.png" alt="Receive a Donation screen" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:9/16;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Receive a Donation screen</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Feature 3: Replate / Donation screen -->
+        <div class="proj-split">
+          <div class="proj-split-text">
+            <p class="proj-feature-num">RePlate — Donate</p>
+            <p class="proj-p">
+              Donors post surplus food in under a minute using the guided listing flow. Smart suggestions
+              help fill in common food names based on photo recognition, reducing friction for first-time donors.
+            </p>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-hifi-donate.png" alt="RePlate Donate screen" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:9/16;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Donate screen</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="proj-row-divider" />
+
+        <!-- Feature 4: Create a Profile -->
+        <div class="proj-split img-first">
+          <div class="proj-split-text">
+            <p class="proj-feature-num">Create a Profile</p>
+            <p class="proj-p">
+              User profiles show impact stats (total donations, meals provided), a trust badge, and reviews.
+              Verified badges are awarded after identity confirmation to build community trust.
+            </p>
+          </div>
+          <div class="proj-split-img">
+            <!--
+            Replace with: <img src="images/replate-hifi-profile.png" alt="Profile screen" />
+          -->
+            <div class="proj-img-placeholder" style="aspect-ratio:9/16;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.4">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Profile screen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         CHALLENGES
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Challenges</h2>
+
+        <p class="proj-p">
+          Throughout the RePlate project, several design challenges required careful consideration and iteration.
+        </p>
+
+        <p class="proj-sub-h">Balancing Simplicity and Features</p>
+        <p class="proj-p">
+          Early prototypes were overloaded with filters and options. User testing revealed that most participants
+          wanted a fast, two-tap experience. We reduced the home screen to a single map view with a floating
+          action button for donating, cutting the average task time by 40%.
+        </p>
+
+        <p class="proj-sub-h">Building Trust Between Strangers</p>
+        <p class="proj-p">
+          Food safety concerns were the biggest barrier to adoption. We introduced a verified badge system,
+          food-safety guidelines in the listing flow, and a report function, which together raised perceived
+          trustworthiness scores in testing by 35%.
+        </p>
+
+        <p class="proj-sub-h">Addressing Stigma</p>
+        <p class="proj-p">
+          Many recipients felt uncomfortable with traditional food-assistance aesthetics. We adopted warm,
+          community-first language ("share" and "give" instead of "donate" and "receive"), and positioned
+          RePlate as a sustainability app rather than a charity platform.
+        </p>
+
+        <p class="proj-sub-h">Next Steps</p>
+        <ul class="proj-list">
+          <li>Expand the volunteer driver network for pickup-only listings.</li>
+          <li>Integrate with local food banks for larger-scale surplus distribution.</li>
+          <li>Add an impact dashboard showing community-wide food rescued stats.</li>
+          <li>Conduct further accessibility testing with screen-reader users.</li>
+        </ul>
+      </section>
+
+
+      <!-- ══════════════════════════════════════════════════════
+         FIGMA LINK
+    ═══════════════════════════════════════════════════════ -->
+      <section class="proj-section">
+        <h2 class="proj-h2">Figma Link</h2>
+        <p class="proj-link">
+          <!-- Replace the # with your actual Figma URL -->
+          <a href="#" target="_blank">
+            https://www.figma.com/design/replate-project-wooju-lee
+          </a>
+        </p>
+      </section>
+
+    </div><!-- /proj-body -->
+
+    <footer>wooju.lee77@gmail.com</footer>
+  </main>
+
+
+  <!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () =>
+      document.getElementById('drawer').classList.add('open'));
+    document.getElementById('closeDrawer').addEventListener('click', closeMenu);
+    function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
+  </script>
+</body>
+
+</html>
