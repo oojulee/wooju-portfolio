@@ -1,335 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wooju Lee — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- ─── SIDEBAR ─────────────────────────────────────────── -->
-<aside class="sidebar">
-  <div class="sidebar-logo">
-    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
-      <circle r="5" fill="#C8A84B">
-        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#oval-path"/>
-        </animateMotion>
-      </circle>
-      <defs>
-        <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z"/>
-      </defs>
-    </svg>
-  </div>
-
-  <a href="about.html"  class="nav-standalone">About</a>
-  <a href="resume.html" class="nav-standalone">Resume</a>
-
-  <div class="nav-section">
-    <span class="nav-label">UI/UX</span>
-    <ul class="nav-links">
-      <li><a href="sharefood.html">Share Food</a></li>
-      <li><a href="craigslist.html">Craigslist Redesign</a></li>
-      <li><a href="replate.html">RePlate</a></li>
-      <li><a href="golajo.html">GOLAJO</a></li>
-    </ul>
-  </div>
-
-  <div class="nav-section">
-    <span class="nav-label">Interactive</span>
-    <ul class="nav-links">
-      <li><a href="#">Pig game</a></li>
-      <li><a href="#likelion">LIKELION @ UCD</a></li>
-      <li><a href="#collections">My collections</a></li>
-    </ul>
-  </div>
-
-  <div class="nav-section">
-    <span class="nav-label">Graphics</span>
-    <ul class="nav-links">
-      <li><a href="#">Bibimbap</a></li>
-      <li><a href="#">Rex Orange County</a></li>
-      <li><a href="#">INFINITY</a></li>
-    </ul>
-  </div>
-
-  <div class="nav-section">
-    <span class="nav-label">Contact</span>
-    <ul class="nav-links">
-      <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
-      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-    </ul>
-  </div>
-</aside>
-
-<!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
-<header class="mobile-nav">
-  <div class="mobile-logo">
-    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
-      <circle r="5" fill="#C8A84B">
-        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#oval-path"/>
-        </animateMotion>
-      </circle>
-    </svg>
-  </div>
-  <button class="hamburger" id="menuBtn" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
-</header>
-
-<div class="mobile-drawer" id="drawer">
-  <button class="drawer-close" id="closeDrawer">✕</button>
-  <a href="about.html"  class="nav-standalone" onclick="closeMenu()">About</a>
-  <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
-  <div class="nav-section">
-    <span class="nav-label">UI/UX</span>
-    <ul class="nav-links">
-      <li><a href="sharefood.html">Share Food</a></li>
-      <li><a href="craigslist.html">Craigslist Redesign</a></li>
-      <li><a href="replate.html">RePlate</a></li>
-      <li><a href="golajo.html">GOLAJO</a></li>
-    </ul>
-  </div>
-  <div class="nav-section">
-    <span class="nav-label">Interactive</span>
-    <ul class="nav-links">
-      <li><a href="#">Pig game</a></li>
-      <li><a href="#likelion">LIKELION @ UCD</a></li>
-      <li><a href="#collections">My collections</a></li>
-    </ul>
-  </div>
-  <div class="nav-section">
-    <span class="nav-label">Graphics</span>
-    <ul class="nav-links">
-      <li><a href="#">Bibimbap</a></li>
-      <li><a href="#">Rex Orange County</a></li>
-      <li><a href="#">INFINITY</a></li>
-    </ul>
-  </div>
-  <div class="nav-section">
-    <span class="nav-label">Contact</span>
-    <ul class="nav-links">
-      <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
-      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- ─── HOME PAGE CONTENT ─────────────────────────────────── -->
-<main class="main">
-
-  <section class="hero">
-    <p class="hero-tag">UI/UX Designer · Davis, CA</p>
-    <h1>Hi My name is <span class="name">Wooju Lee</span><br>Welcome to my Portfolio!</h1>
-    <p>I'm a <span class="role">UI/UX designer</span> passionate about crafting intuitive and engaging digital experiences.</p>
-  </section>
-
-  <section class="works">
-    <div class="grid">
-
-     <a class="card" href="sharefood.html">
-        <div class="card-thumb">
-          <img src="images/sharefood-app.png" alt="Share Food" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">Share Food</div>
-            <div class="card-type">App Design</div>
-          </div>
-          <div class="card-year">2024</div>
-        </div>
-      </a>
-
-      <a class="card" href="#" onclick="openProject('golajo'); return false;">
-        <div class="card-thumb">
-          <img src="images/golajo-app.png" alt="GOLAJO" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">GOLAJO</div>
-            <div class="card-type">App Design</div>
-          </div>
-          <div class="card-year">2023</div>
-        </div>
-      </a>
-
-      <a class="card" href="craigslist.html">
-        <div class="card-thumb">
-          <img src="images/Craiglist.png" alt="Craigslist Redesign" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">Craigslist Redesign</div>
-            <div class="card-type">Website Design</div>
-          </div>
-          <div class="card-year">2024</div>
-        </div>
-      </a>
-
-      <a class="card" href="#" onclick="openProject('rex'); return false;">
-        <div class="card-thumb">
-          <img src="images/tour-poster.png" alt="Rex Orange County" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">Rex Orange County</div>
-            <div class="card-type">Poster Design</div>
-          </div>
-          <div class="card-year">2020</div>
-        </div>
-      </a>
-
-      <a class="card" href="replate.html">
-        <div class="card-thumb">
-          <img src="images/Replate-designfest.png" alt="RePlate" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">Replate</div>
-            <div class="card-type">App Design</div>
-          </div>
-          <div class="card-year">2023</div>
-        </div>
-      </a>
-
-      <a class="card" href="#" onclick="openProject('infinity'); return false;">
-        <div class="card-thumb">
-          <img src="images/INFINITY.png" alt="INFINITY" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">INFINITY</div>
-            <div class="card-type">Book Design</div>
-          </div>
-          <div class="card-year">2024</div>
-        </div>
-      </a>
-
-      <a class="card" href="#" onclick="openProject('pig-game'); return false;">
-        <div class="card-thumb">
-          <img src="images/pig-game.png" alt="Pig Game" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">Pig Game</div>
-            <div class="card-type">App Design</div>
-          </div>
-          <div class="card-year">2023</div>
-        </div>
-      </a>
-
-      <a class="card" href="#" onclick="openProject('bibimbap'); return false;">
-        <div class="card-thumb">
-          <img src="images/bibimbap-zine.png" alt="Bibimbap" />
-          <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
-        </div>
-        <div class="card-meta">
-          <div class="card-info">
-            <div class="card-title">Bibimbap</div>
-            <div class="card-type">Zine Design</div>
-          </div>
-          <div class="card-year">2023</div>
-        </div>
-      </a>
-
+  <!-- ─── SIDEBAR ─────────────────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+        <circle r="5" fill="#C8A84B">
+          <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#oval-path" />
+          </animateMotion>
+        </circle>
+        <defs>
+          <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z" />
+        </defs>
+      </svg>
     </div>
-  </section>
 
-  <footer>wooju.lee77@gmail.com</footer>
-</main>
+    <a href="about.html" class="nav-standalone">About</a>
+    <a href="resume.html" class="nav-standalone">Resume</a>
 
-<!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
-<script>
-/* Project data — detail pages will be built separately.
-   openProject() is a temporary stub that will be replaced. */
-const PROJECTS = {
-  'share-food': {
-    title: 'Share Food', subtitle: 'A community-driven food-sharing app.',
-    category: 'UI/UX · App Design', year: '2024', role: 'UX Designer / Researcher', tools: 'Figma, Maze, Miro',
-    heroImg: 'images/sharefood-app.png', gallery: ['', ''],
-    tags: ['User Research', 'Wireframing', 'Prototyping', 'Usability Testing', 'Mobile'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  },
-  'golajo': {
-    title: 'GOLAJO', subtitle: 'A curated secondhand streetwear marketplace.',
-    category: 'UI/UX · App Design', year: '2023', role: 'Product Designer', tools: 'Figma, Principle, Adobe XD',
-    heroImg: 'images/golajo-app.png', gallery: ['', ''],
-    tags: ['E-commerce', 'Fashion', 'Mobile', 'Interaction Design', 'Figma'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  },
-  'craigslist': {
-    title: 'Craigslist Redesign', subtitle: 'Modernising a 30-year-old classifieds institution.',
-    category: 'UI/UX · Website Design', year: '2024', role: 'UX / Visual Designer', tools: 'Figma, Maze, Google Analytics',
-    heroImg: 'images/Craiglist.png', gallery: ['', ''],
-    tags: ['Web Design', 'Information Architecture', 'Redesign', 'Figma', 'Responsive'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  },
-  'rex': {
-    title: 'Rex Orange County', subtitle: '"The Who Cares? Tour 2022" — concert poster series.',
-    category: 'Graphics · Poster Design', year: '2020', role: 'Graphic Designer', tools: 'Adobe Illustrator, Photoshop',
-    heroImg: 'images/tour-poster.png', gallery: ['', ''],
-    tags: ['Print Design', 'Typography', 'Illustration', 'Music'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  },
-  'replate': {
-    title: 'RePlate', subtitle: 'Reducing campus food waste through a redistribution app.',
-    category: 'UI/UX · App Design', year: '2023', role: 'UX Designer / Researcher', tools: 'Figma, Notion, UserZoom',
-    heroImg: 'images/Replate-designfest.png', gallery: ['', ''],
-    tags: ['Sustainability', 'Campus', 'Mobile', 'Systems Design', 'Figma'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  },
-  'infinity': {
-    title: 'INFINITY', subtitle: 'An experimental editorial book exploring typography.',
-    category: 'Graphics · Book Design', year: '2024', role: 'Book Designer / Art Director', tools: 'InDesign, Illustrator, Photoshop',
-    heroImg: 'images/INFINITY.png', gallery: ['', ''],
-    tags: ['Book Design', 'Typography', 'Editorial', 'Print', 'Experimental'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  },
-  'pig-game': {
-    title: 'Pig Game', subtitle: 'A playful two-player dice game with character design.',
-    category: 'Interactive · App Design', year: '2023', role: 'UI Designer / Frontend Developer', tools: 'Figma, HTML / CSS / JS',
-    heroImg: 'images/pig-game.png', gallery: ['', ''],
-    tags: ['Game Design', 'Frontend', 'Animation', 'JavaScript', 'Interactive'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  },
-  'bibimbap': {
-    title: 'Bibimbap', subtitle: 'A food culture zine celebrating Korean culinary identity.',
-    category: 'Graphics · Zine Design', year: '2023', role: 'Art Director / Illustrator', tools: 'Illustrator, InDesign, Procreate',
-    heroImg: 'images/bibimbap-zine.png', gallery: ['', ''],
-    tags: ['Zine', 'Editorial', 'Illustration', 'Food Culture', 'Korean Design'],
-    body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
-  }
-};
+    <div class="nav-section">
+      <span class="nav-label">UI/UX</span>
+      <ul class="nav-links">
+        <li><a href="sharefood.html">Share Food</a></li>
+        <li><a href="craigslist.html">Craigslist Redesign</a></li>
+        <li><a href="replate.html">RePlate</a></li>
+        <li><a href="golajo.html">GOLAJO</a></li>
+      </ul>
+    </div>
 
-/* Temporary inline detail overlay — will be replaced by individual project pages */
-function openProject(id) {
-  const p = PROJECTS[id];
-  if (!p) return;
-  alert(`"${p.title}" — project detail page coming soon!`);
-}
+    <div class="nav-section">
+      <span class="nav-label">Interactive</span>
+      <ul class="nav-links">
+        <li><a href="#likelion">LIKELION @ UCD</a></li>
+        <li><a href="#collections">My collections</a></li>
+      </ul>
+    </div>
 
-/* Mobile drawer */
-document.getElementById('menuBtn').addEventListener('click', () =>
-  document.getElementById('drawer').classList.add('open'));
-document.getElementById('closeDrawer').addEventListener('click', closeMenu);
-function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
+    <div class="nav-section">
+      <span class="nav-label">Graphics</span>
+      <ul class="nav-links">
+        <li><a href="zine.html">Bibimbap</a></li>
+        <li><a href="book.html">INFINITY</a></li>
+      </ul>
+    </div>
 
-/* Card fade-in */
-document.querySelectorAll('.card').forEach((card, i) => {
-  setTimeout(() => card.classList.add('visible'), 80 + i * 80);
-});
-</script>
+    <div class="nav-section">
+      <span class="nav-label">Contact</span>
+      <ul class="nav-links">
+        <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
+  <header class="mobile-nav">
+    <div class="mobile-logo">
+      <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+        <circle r="5" fill="#C8A84B">
+          <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#oval-path" />
+          </animateMotion>
+        </circle>
+      </svg>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-drawer" id="drawer">
+    <button class="drawer-close" id="closeDrawer">✕</button>
+    <a href="about.html" class="nav-standalone" onclick="closeMenu()">About</a>
+    <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
+    <div class="nav-section">
+      <span class="nav-label">UI/UX</span>
+      <ul class="nav-links">
+        <li><a href="sharefood.html">Share Food</a></li>
+        <li><a href="craigslist.html">Craigslist Redesign</a></li>
+        <li><a href="replate.html">RePlate</a></li>
+        <li><a href="golajo.html">GOLAJO</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Interactive</span>
+      <ul class="nav-links">
+        <li><a href="#likelion">LIKELION @ UCD</a></li>
+        <li><a href="#collections">My collections</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Graphics</span>
+      <ul class="nav-links">
+        <li><a href="#">Bibimbap</a></li>
+        <li><a href="#">INFINITY</a></li>
+      </ul>
+    </div>
+    <div class="nav-section">
+      <span class="nav-label">Contact</span>
+      <ul class="nav-links">
+        <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── HOME PAGE CONTENT ─────────────────────────────────── -->
+  <main class="main">
+
+    <section class="hero">
+      <p class="hero-tag">UI/UX Designer · Davis, CA</p>
+      <h1>Hi My name is <span class="name">Wooju Lee</span><br>Welcome to my Portfolio!</h1>
+      <p>I'm a <span class="role">UI/UX designer</span> passionate about crafting intuitive and engaging digital
+        experiences.</p>
+    </section>
+
+    <section class="works">
+      <div class="grid">
+
+        <a class="card" href="sharefood.html">
+          <div class="card-thumb">
+            <img src="images/sharefood-app.png" alt="Share Food" />
+            <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
+          </div>
+          <div class="card-meta">
+            <div class="card-info">
+              <div class="card-title">Share Food</div>
+              <div class="card-type">App Design</div>
+            </div>
+            <div class="card-year">2024</div>
+          </div>
+        </a>
+
+        <a class="card" href="golajo.html">
+          <div class="card-thumb">
+            <img src="images/golajo-app.png" alt="GOLAJO" />
+            <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
+          </div>
+          <div class="card-meta">
+            <div class="card-info">
+              <div class="card-title">GOLAJO</div>
+              <div class="card-type">App Design</div>
+            </div>
+            <div class="card-year">2023</div>
+          </div>
+        </a>
+
+        <a class="card" href="craigslist.html">
+          <div class="card-thumb">
+            <img src="images/Craiglist.png" alt="Craigslist Redesign" />
+            <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
+          </div>
+          <div class="card-meta">
+            <div class="card-info">
+              <div class="card-title">Craigslist Redesign</div>
+              <div class="card-type">Website Design</div>
+            </div>
+            <div class="card-year">2024</div>
+          </div>
+        </a>
+
+
+        <a class="card" href="replate.html">
+          <div class="card-thumb">
+            <img src="images/Replate-designfest.png" alt="RePlate" />
+            <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
+          </div>
+          <div class="card-meta">
+            <div class="card-info">
+              <div class="card-title">Replate</div>
+              <div class="card-type">App Design</div>
+            </div>
+            <div class="card-year">2023</div>
+          </div>
+        </a>
+
+        <a class="card" href="book.html">
+          <div class="card-thumb">
+            <img src="images/INFINITY.png" alt="INFINITY" />
+            <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
+          </div>
+          <div class="card-meta">
+            <div class="card-info">
+              <div class="card-title">INFINITY</div>
+              <div class="card-type">Book Design</div>
+            </div>
+            <div class="card-year">2024</div>
+          </div>
+        </a>
+
+        <a class="card" href="zine.html">
+          <div class="card-thumb">
+            <img src="images/bibimbap-zine.png" alt="Bibimbap" />
+            <div class="card-overlay"><span class="card-overlay-label">View Project →</span></div>
+          </div>
+          <div class="card-meta">
+            <div class="card-info">
+              <div class="card-title">Bibimbap</div>
+              <div class="card-type">Zine Design</div>
+            </div>
+            <div class="card-year">2023</div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <footer>wooju.lee77@gmail.com</footer>
+  </main>
+
+  <!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
+  <script>
+    /* Project data — detail pages will be built separately.
+       openProject() is a temporary stub that will be replaced. */
+    const PROJECTS = {
+      'share-food': {
+        title: 'Share Food', subtitle: 'A community-driven food-sharing app.',
+        category: 'UI/UX · App Design', year: '2024', role: 'UX Designer / Researcher', tools: 'Figma, Maze, Miro',
+        heroImg: 'images/sharefood-app.png', gallery: ['', ''],
+        tags: ['User Research', 'Wireframing', 'Prototyping', 'Usability Testing', 'Mobile'],
+        body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
+      },
+      'golajo': {
+        title: 'GOLAJO', subtitle: 'A curated secondhand streetwear marketplace.',
+        category: 'UI/UX · App Design', year: '2023', role: 'Product Designer', tools: 'Figma, Principle, Adobe XD',
+        heroImg: 'images/golajo-app.png', gallery: ['', ''],
+        tags: ['E-commerce', 'Fashion', 'Mobile', 'Interaction Design', 'Figma'],
+        body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
+      },
+      'craigslist': {
+        title: 'Craigslist Redesign', subtitle: 'Modernising a 30-year-old classifieds institution.',
+        category: 'UI/UX · Website Design', year: '2024', role: 'UX / Visual Designer', tools: 'Figma, Maze, Google Analytics',
+        heroImg: 'images/Craiglist.png', gallery: ['', ''],
+        tags: ['Web Design', 'Information Architecture', 'Redesign', 'Figma', 'Responsive'],
+        body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
+      },
+      'replate': {
+        title: 'RePlate', subtitle: 'Reducing campus food waste through a redistribution app.',
+        category: 'UI/UX · App Design', year: '2023', role: 'UX Designer / Researcher', tools: 'Figma, Notion, UserZoom',
+        heroImg: 'images/Replate-designfest.png', gallery: ['', ''],
+        tags: ['Sustainability', 'Campus', 'Mobile', 'Systems Design', 'Figma'],
+        body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
+      },
+      'infinity': {
+        title: 'INFINITY', subtitle: 'An experimental editorial book exploring typography.',
+        category: 'Graphics · Book Design', year: '2024', role: 'Book Designer / Art Director', tools: 'InDesign, Illustrator, Photoshop',
+        heroImg: 'images/INFINITY.png', gallery: ['', ''],
+        tags: ['Book Design', 'Typography', 'Editorial', 'Print', 'Experimental'],
+        body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
+      },
+      'bibimbap': {
+        title: 'Bibimbap', subtitle: 'A food culture zine celebrating Korean culinary identity.',
+        category: 'Graphics · Zine Design', year: '2023', role: 'Art Director / Illustrator', tools: 'Illustrator, InDesign, Procreate',
+        heroImg: 'images/bibimbap-zine.png', gallery: ['', ''],
+        tags: ['Zine', 'Editorial', 'Illustration', 'Food Culture', 'Korean Design'],
+        body: '<h3>Coming soon</h3><p>Full case study in progress.</p>'
+      }
+    };
+
+    /* Temporary inline detail overlay — will be replaced by individual project pages */
+    function openProject(id) {
+      const p = PROJECTS[id];
+      if (!p) return;
+      alert(`"${p.title}" — project detail page coming soon!`);
+    }
+
+    /* Mobile drawer */
+    document.getElementById('menuBtn').addEventListener('click', () =>
+      document.getElementById('drawer').classList.add('open'));
+    document.getElementById('closeDrawer').addEventListener('click', closeMenu);
+    function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
+
+    /* Card fade-in */
+    document.querySelectorAll('.card').forEach((card, i) => {
+      setTimeout(() => card.classList.add('visible'), 80 + i * 80);
+    });
+  </script>
 </body>
+
 </html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INFINITY — Wooju Lee</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ─── SIDEBAR ─────────────────────────────────────────── -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
+      <circle r="5" fill="#C8A84B">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#oval-path"/>
+        </animateMotion>
+      </circle>
+      <defs>
+        <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z"/>
+      </defs>
+    </svg>
+  </div>
+
+  <a href="about.html" class="nav-standalone">About</a>
+  <a href="resume.html" class="nav-standalone">Resume</a>
+
+  <div class="nav-section">
+    <span class="nav-label">UI/UX</span>
+    <ul class="nav-links">
+      <li><a href="sharefood.html">Share Food</a></li>
+      <li><a href="craigslist.html">Craigslist Redesign</a></li>
+      <li><a href="replate.html">RePlate</a></li>
+      <li><a href="golajo.html">GOLAJO</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Interactive</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Pig game</a></li>
+      <li><a href="index.html">LIKELION @ UCD</a></li>
+      <li><a href="index.html">My collections</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Graphics</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Bibimbap</a></li>
+      <li><a href="index.html">Rex Orange County</a></li>
+      <li><a href="book.html" class="active">INFINITY</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <span class="nav-label">Contact</span>
+    <ul class="nav-links">
+      <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</aside>
+
+<!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
+<header class="mobile-nav">
+  <div class="mobile-logo">
+    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
+      <circle r="5" fill="#C8A84B">
+        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#oval-path"/>
+        </animateMotion>
+      </circle>
+    </svg>
+  </div>
+  <button class="hamburger" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-drawer" id="drawer">
+  <button class="drawer-close" id="closeDrawer">✕</button>
+  <a href="about.html" class="nav-standalone" onclick="closeMenu()">About</a>
+  <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
+  <div class="nav-section">
+    <span class="nav-label">UI/UX</span>
+    <ul class="nav-links">
+      <li><a href="sharefood.html" onclick="closeMenu()">Share Food</a></li>
+      <li><a href="craigslist.html" onclick="closeMenu()">Craigslist Redesign</a></li>
+      <li><a href="replate.html" onclick="closeMenu()">RePlate</a></li>
+      <li><a href="golajo.html" onclick="closeMenu()">GOLAJO</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Interactive</span>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="closeMenu()">Pig game</a></li>
+      <li><a href="index.html" onclick="closeMenu()">LIKELION @ UCD</a></li>
+      <li><a href="index.html" onclick="closeMenu()">My collections</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Graphics</span>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
+      <li><a href="index.html" onclick="closeMenu()">Rex Orange County</a></li>
+      <li><a href="book.html" onclick="closeMenu()">INFINITY</a></li>
+    </ul>
+  </div>
+  <div class="nav-section">
+    <span class="nav-label">Contact</span>
+    <ul class="nav-links">
+      <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ─── MAIN ──────────────────────────────────────────────── -->
+<main class="main">
+
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <h1>INFINITY</h1>
+      <p class="proj-header-sub">Book Design · 2024 · InDesign, Illustrator, Photoshop</p>
+    </div>
+  </div>
+
+  <!-- ── INTERACTIVE BOOK ──────────────────────────────────── -->
+  <section class="infinity-book-section">
+    <div class="book-wrapper">
+
+      <p class="book-hint">Click the pages or press ← → to flip</p>
+
+      <div class="book-scene">
+        <div class="book" id="book">
+
+          <!-- Spine gradient overlay -->
+          <div class="book-spine"></div>
+
+          <!--
+            Leaves are ordered bottom → top (first in DOM = bottom of stack).
+            Each leaf carries:
+              front face = right-side page shown before flipping
+              back face  = left-side page shown after flipping
+            Leaf 0 is the front-cover leaf (top of stack, last in DOM).
+          -->
+
+          <!-- Leaf 7 (bottom) — right: p15 · left after flip: p16 back cover -->
+          <div class="page" data-leaf="7">
+            <div class="page-front">
+              <img src="images/infinity-page15.png" alt="Page 15" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page16.png" alt="Back Cover" />
+            </div>
+          </div>
+
+          <!-- Leaf 6 — right: p13 · left after flip: p14 -->
+          <div class="page" data-leaf="6">
+            <div class="page-front">
+              <img src="images/infinity-page13.png" alt="Page 13" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page14.png" alt="Page 14" />
+            </div>
+          </div>
+
+          <!-- Leaf 5 — right: p11 · left after flip: p12 -->
+          <div class="page" data-leaf="5">
+            <div class="page-front">
+              <img src="images/infinity-page11.png" alt="Page 11" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page12.png" alt="Page 12" />
+            </div>
+          </div>
+
+          <!-- Leaf 4 — right: p9 · left after flip: p10 -->
+          <div class="page" data-leaf="4">
+            <div class="page-front">
+              <img src="images/infinity-page9.png" alt="Page 9" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page10.png" alt="Page 10" />
+            </div>
+          </div>
+
+          <!-- Leaf 3 — right: p7 · left after flip: p8 -->
+          <div class="page" data-leaf="3">
+            <div class="page-front">
+              <img src="images/infinity-page7.png" alt="Page 7" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page8.png" alt="Page 8" />
+            </div>
+          </div>
+
+          <!-- Leaf 2 — right: p5 · left after flip: p6 -->
+          <div class="page" data-leaf="2">
+            <div class="page-front">
+              <img src="images/infinity-page5.png" alt="Page 5" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page6.png" alt="Page 6" />
+            </div>
+          </div>
+
+          <!-- Leaf 1 — right: p3 · left after flip: p4 -->
+          <div class="page" data-leaf="1">
+            <div class="page-front">
+              <img src="images/infinity-page3.png" alt="Page 3" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page4.png" alt="Page 4" />
+            </div>
+          </div>
+
+          <!-- Leaf 0 (top) — right: front cover · left after flip: p2 -->
+          <div class="page" data-leaf="0">
+            <div class="page-front">
+              <img src="images/infinity-page1.png" alt="Front Cover" />
+            </div>
+            <div class="page-back">
+              <img src="images/infinity-page2.png" alt="Page 2" />
+            </div>
+          </div>
+
+        </div><!-- /#book -->
+
+        <!-- Cover masks: siblings of #book, never inside the 3D context -->
+        <div id="bookLeftMask"  class="book-left-mask visible"></div>
+        <div id="bookRightMask" class="book-right-mask"></div>
+
+        <!-- Hover navigation zones -->
+        <div id="hoverLeft"  class="book-hover-zone book-hover-left  disabled"></div>
+        <div id="hoverRight" class="book-hover-zone book-hover-right"></div>
+
+      </div><!-- /.book-scene -->
+
+      <!-- Controls -->
+      <div class="book-controls">
+        <button class="book-btn" id="prevBtn" disabled>&#8592; Prev</button>
+        <span class="book-page-info" id="pageInfo">Cover</span>
+        <button class="book-btn" id="nextBtn">Next &#8594;</button>
+      </div>
+
+    </div><!-- /.book-wrapper -->
+  </section>
+
+  <footer>wooju.lee77@gmail.com</footer>
+
+</main>
+
+<!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
+<script src="book.js"></script>
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () =>
+    document.getElementById('drawer').classList.add('open'));
+  document.getElementById('closeDrawer').addEventListener('click', closeMenu);
+  function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
+</script>
+</body>
+</html>

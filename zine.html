@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Wooju Lee</title>
+  <title>Bibimbap Zine — Wooju Lee</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -25,15 +25,15 @@
     </svg>
   </div>
 
-  <a href="about.html"  class="nav-standalone active">About</a>
+  <a href="about.html" class="nav-standalone">About</a>
   <a href="resume.html" class="nav-standalone">Resume</a>
 
   <div class="nav-section">
     <span class="nav-label">UI/UX</span>
     <ul class="nav-links">
-      <li><a href="index.html">Share Food</a></li>
-      <li><a href="index.html">Craigslist Redesign</a></li>
-      <li><a href="index.html">RePlate</a></li>
+      <li><a href="sharefood.html">Share Food</a></li>
+      <li><a href="craigslist.html">Craigslist Redesign</a></li>
+      <li><a href="replate.html">RePlate</a></li>
       <li><a href="golajo.html">GOLAJO</a></li>
     </ul>
   </div>
@@ -49,8 +49,8 @@
   <div class="nav-section">
     <span class="nav-label">Graphics</span>
     <ul class="nav-links">
-      <li><a href="index.html">Bibimbap</a></li>
-      <li><a href="index.html">INFINITY</a></li>
+      <li><a href="zine.html" class="active">Bibimbap</a></li>
+      <li><a href="book.html">INFINITY</a></li>
     </ul>
   </div>
 
@@ -82,15 +82,15 @@
 
 <div class="mobile-drawer" id="drawer">
   <button class="drawer-close" id="closeDrawer">✕</button>
-  <a href="about.html"  class="nav-standalone active" onclick="closeMenu()">About</a>
+  <a href="about.html" class="nav-standalone" onclick="closeMenu()">About</a>
   <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
   <div class="nav-section">
     <span class="nav-label">UI/UX</span>
     <ul class="nav-links">
-      <li><a href="index.html" onclick="closeMenu()">Share Food</a></li>
-      <li><a href="index.html" onclick="closeMenu()">Craigslist Redesign</a></li>
-      <li><a href="index.html" onclick="closeMenu()">RePlate</a></li>
-      <li><a href="index.html" onclick="closeMenu()">GOLAJO</a></li>
+      <li><a href="sharefood.html" onclick="closeMenu()">Share Food</a></li>
+      <li><a href="craigslist.html" onclick="closeMenu()">Craigslist Redesign</a></li>
+      <li><a href="replate.html" onclick="closeMenu()">RePlate</a></li>
+      <li><a href="golajo.html" onclick="closeMenu()">GOLAJO</a></li>
     </ul>
   </div>
   <div class="nav-section">
@@ -103,8 +103,8 @@
   <div class="nav-section">
     <span class="nav-label">Graphics</span>
     <ul class="nav-links">
-      <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
-      <li><a href="index.html" onclick="closeMenu()">INFINITY</a></li>
+      <li><a href="zine.html" onclick="closeMenu()">Bibimbap</a></li>
+      <li><a href="book.html" onclick="closeMenu()">INFINITY</a></li>
     </ul>
   </div>
   <div class="nav-section">
@@ -116,47 +116,31 @@
   </div>
 </div>
 
-<!-- ─── ABOUT PAGE CONTENT ───────────────────────────────── -->
+<!-- ─── MAIN ──────────────────────────────────────────────── -->
 <main class="main">
 
-  <div class="about-header">
-    <h1>Hi I am Wooju!</h1>
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <h1>Bibimbap</h1>
+      <p class="proj-header-sub">Zine Design · 2024 · InDesign, Illustrator, Photoshop</p>
+    </div>
   </div>
 
-  <div class="about-content">
-
-    <div class="about-photo">
-      <img src="images/me.jpeg" alt="Wooju Lee" />
-    </div>
-
-    <div class="about-bio">
-      <p>
-        I'm currently studying <a href="#">Design</a> and
-        <a href="#">Cognitive Science</a> at the University of California, Davis.
-        As a passionate <a href="#">UI/UX designer</a>, I aspire to create
-        experiences that truly improve people's lives. I find inspiration in
-        everyday moments and am always eager to learn something new, whether
-        it's a design technique or a fresh perspective from the world around me.
-      </p>
-      <p>
-        Beyond design, I dream of exploring cultures through food — one day,
-        I hope to travel the world and try all kinds of dishes from different
-        countries. Cooking and tasting new foods bring me joy and inspire my
-        creativity.
-      </p>
-    </div>
-
+  <div class="proj-body">
+    <div><img src="images/bibimbap-zine.png" alt="Bibimbap Zine" /></div>
+    <div><img src="images/bibimbap-zine2.jpg" alt="Bibimbap Zine spread" /></div>
   </div>
 
   <footer>wooju.lee77@gmail.com</footer>
+
 </main>
 
 <!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
 <script>
-document.getElementById('menuBtn').addEventListener('click', () =>
-  document.getElementById('drawer').classList.add('open'));
-document.getElementById('closeDrawer').addEventListener('click', closeMenu);
-function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
+  document.getElementById('menuBtn').addEventListener('click', () =>
+    document.getElementById('drawer').classList.add('open'));
+  document.getElementById('closeDrawer').addEventListener('click', closeMenu);
+  function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
 </script>
 </body>
 </html>

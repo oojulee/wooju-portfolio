@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOLAJO — Wooju Lee</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ─── SIDEBAR ─────────────────────────────────────────── -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+                <circle r="5" fill="#C8A84B">
+                    <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+                        <mpath href="#oval-path" />
+                    </animateMotion>
+                </circle>
+                <defs>
+                    <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z" />
+                </defs>
+            </svg>
+        </div>
+
+        <a href="about.html" class="nav-standalone">About</a>
+        <a href="resume.html" class="nav-standalone">Resume</a>
+
+        <div class="nav-section">
+            <span class="nav-label">UI/UX</span>
+            <ul class="nav-links">
+                <li><a href="sharefood.html">Share Food</a></li>
+                <li><a href="craigslist.html">Craigslist Redesign</a></li>
+                <li><a href="replate.html">RePlate</a></li>
+                <li><a href="golajo.html" class="active">GOLAJO</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <span class="nav-label">Interactive</span>
+            <ul class="nav-links">
+                <li><a href="index.html">LIKELION @ UCD</a></li>
+                <li><a href="index.html">My collections</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <span class="nav-label">Graphics</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Bibimbap</a></li>
+                <li><a href="index.html">INFINITY</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <span class="nav-label">Contact</span>
+            <ul class="nav-links">
+                <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
+    <header class="mobile-nav">
+        <div class="mobile-logo">
+            <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white" />
+                <circle r="5" fill="#C8A84B">
+                    <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+                        <mpath href="#oval-path" />
+                    </animateMotion>
+                </circle>
+            </svg>
+        </div>
+        <button class="hamburger" id="menuBtn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-drawer" id="drawer">
+        <button class="drawer-close" id="closeDrawer">✕</button>
+        <a href="about.html" class="nav-standalone" onclick="closeMenu()">About</a>
+        <a href="resume.html" class="nav-standalone" onclick="closeMenu()">Resume</a>
+        <div class="nav-section">
+            <span class="nav-label">UI/UX</span>
+            <ul class="nav-links">
+                <li><a href="sharefood.html" onclick="closeMenu()">Share Food</a></li>
+                <li><a href="craigslist.html" onclick="closeMenu()">Craigslist Redesign</a></li>
+                <li><a href="replate.html" onclick="closeMenu()">RePlate</a></li>
+                <li><a href="golajo.html" onclick="closeMenu()">GOLAJO</a></li>
+            </ul>
+        </div>
+        <div class="nav-section">
+            <span class="nav-label">Interactive</span>
+            <ul class="nav-links">
+                <li><a href="index.html" onclick="closeMenu()">LIKELION @ UCD</a></li>
+                <li><a href="index.html" onclick="closeMenu()">My collections</a></li>
+            </ul>
+        </div>
+        <div class="nav-section">
+            <span class="nav-label">Graphics</span>
+            <ul class="nav-links">
+                <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
+                <li><a href="index.html" onclick="closeMenu()">INFINITY</a></li>
+            </ul>
+        </div>
+        <div class="nav-section">
+            <span class="nav-label">Contact</span>
+            <ul class="nav-links">
+                <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+   PAGE CONTENT
+════════════════════════════════════════════════════════ -->
+    <main class="main">
+
+        <!-- ── Page Header ──────────────────────────────────────── -->
+        <div class="proj-header">
+            <div class="proj-header-inner">
+                <h1>GOLAJO</h1>
+                <p class="proj-header-sub">
+                    The app transforms the shopping experience by allowing users to virtually try on and coordinate
+                    outfits across brands using AI recommendations and smart fitting tools.
+                </p>
+            </div>
+        </div>
+
+        <div class="proj-body">
+
+            <div><img src="images/golajo-app.png" alt="golajo"></div>
+
+
+
+
+            <!-- ══════════════════════════════════════════════════════
+       INTRODUCTION
+  ═══════════════════════════════════════════════════════ -->
+            <section class="proj-section">
+                <h2 class="proj-h2">Introduction</h2>
+                <p class="proj-p">
+                    GOLAJO is a smart fashion app that helps users virtually try on and style outfits across multiple
+                    brands. By combining AI-driven recommendations with sensor-based sizing and smart fitting tools,
+                    GOLAJO offers a personalized and seamless shopping experience—anytime, anywhere.
+                </p>
+
+                <h3 class="proj-h3">What Does GOLAJO Do?</h3>
+                <ul class="proj-list">
+                    <li>GOLAJO helps users virtually try on clothes, mix and match outfits across different brands, and
+                        find the perfect fit and style—all without stepping into a fitting room.</li>
+                    <li>Using AI recommendations, sensor-based size detection, and smart mirror integration, GOLAJO
+                        makes fashion shopping more personalized, efficient, and fun for everyone.</li>
+                </ul>
+
+                <h3 class="proj-h3">Why GOLAJO?</h3>
+                <p class="proj-p">
+                    Shopping for clothes online often lacks personalization, and trying on outfits in-store can be
+                    time-consuming and inconvenient. GOLAJO bridges this gap by allowing users to virtually try on
+                    clothes, coordinate cross-brand outfits, and get accurate fit suggestions—saving time, reducing
+                    returns, and making fashion more accessible and enjoyable for everyone.
+                </p>
+
+                <h3 class="proj-h3">Our Goal</h3>
+                <p class="proj-p">
+                    Our goal is to redefine the fashion shopping experience by making it more personalized, efficient,
+                    and inclusive. GOLAJO aims to help users discover their perfect style, save time, and shop
+                    confidently—anytime, anywhere, without physical limitations.
+                </p>
+            </section>
+
+
+            <!-- ══════════════════════════════════════════════════════
+       USER PERSONA
+  ═══════════════════════════════════════════════════════ -->
+            <section class="proj-section">
+                <h2 class="proj-h2">User Persona</h2>
+                <div><img src="images/golajo-persona1.png" alt="persona1"></div>
+                <div><img src="images/golajo-persona2.png" alt="persona2"></div>
+            </section>
+
+
+            <!-- ══════════════════════════════════════════════════════
+       HIGH-FIDELITY
+  ═══════════════════════════════════════════════════════ -->
+            <section class="proj-section">
+                <h2 class="proj-h2">High-Fidelity</h2>
+
+                <div><img src="images/golajo-hifi.png" alt="hi-fi"></div>
+
+                <p class="proj-feature-num">1. AI Preference Survey</p>
+                <p class="proj-p">During onboarding, users fill out a brief survey about their preferred styles, colors,
+                    and favorite brands. This helps the AI personalize outfit recommendations from the start.</p>
+
+                <p class="proj-feature-num">2. Personal Color Analysis (via facial recognition)</p>
+                <p class="proj-p">By scanning the user's face with their phone camera, GOLAJO analyzes skin tone to
+                    recommend colors that best match their personal palette.</p>
+
+                <p class="proj-feature-num">3. Body Measurement Scan</p>
+                <p class="proj-p">Using the smartphone camera, users can scan their body to receive accurate size
+                    data—improving fit predictions across brands.</p>
+
+                <p class="proj-feature-num">4. Try-on Closet (AI Outfit Matching)</p>
+                <p class="proj-p">Users can save recommended outfits to "My Closet," swipe through options, and
+                    virtually try them on their own face and body using a 360° simulation. This makes outfit exploration
+                    intuitive and fun.</p>
+
+                <p class="proj-feature-num">5. Browse by Brand (A–Z) or Category</p>
+                <p class="proj-p">Easily explore clothing by brand name in alphabetical order or filter by clothing
+                    type. A clean, efficient browsing experience.</p>
+
+                <p class="proj-feature-num">6. Smart Search Function</p>
+                <p class="proj-p">Quickly find specific items, brands, or styles through a powerful search bar with
+                    auto-suggestions.</p>
+
+                <p class="proj-feature-num">7. Add to Bag</p>
+                <p class="proj-p">When users find a match, they can instantly add it to their bag and proceed to
+                    purchase within the app.</p>
+            </section>
+
+
+            <!-- ══════════════════════════════════════════════════════
+       PROBLEM SOLVING
+  ═══════════════════════════════════════════════════════ -->
+            <section class="proj-section">
+                <h2 class="proj-h2">Problem Solving</h2>
+                <p class="proj-p">
+                    Online shopping often leaves users uncertain about fit, color compatibility, and whether a look
+                    truly suits them—especially when combining items across brands. GOLAJO solves this by providing a
+                    personalized and interactive virtual try-on experience powered by AI. From smart surveys and
+                    face/body recognition to real-time styling previews, the app empowers users to discover their ideal
+                    style with confidence.
+                </p>
+            </section>
+
+
+            <!-- ══════════════════════════════════════════════════════
+       FUTURE IMPROVEMENTS
+  ═══════════════════════════════════════════════════════ -->
+            <section class="proj-section">
+                <h2 class="proj-h2">Future Improvements</h2>
+                <p class="proj-p">To further enhance the user experience and scalability of GOLAJO, we plan to:</p>
+                <ul class="proj-list">
+                    <li>Expand diversity in training data to improve AI accuracy across body types and skin tones.</li>
+                    <li>Enable social sharing and feedback, letting users exchange style opinions with friends in-app.
+                    </li>
+                    <li>Partner with more brands globally, including local and sustainable labels, to expand wardrobe
+                        options.</li>
+                    <li>Refine 360° virtual try-on technology for more realistic fabric movement and body mapping.</li>
+                    <li>Integrate with in-store fitting rooms, allowing users to use GOLAJO with smart mirrors and body
+                        sensors for a seamless hybrid experience between digital and physical retail.</li>
+                </ul>
+            </section>
+
+
+            <!-- ══════════════════════════════════════════════════════
+       FIGMA LINK
+  ═══════════════════════════════════════════════════════ -->
+            <section class="proj-section">
+                <h2 class="proj-h2">Figma Link</h2>
+                <p class="proj-link">
+                    <a href="https://www.figma.com/proto/Qyc4ILiq2WVGjHRlbMOPM/GOLAJO?node-id=281-357261&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=230%3A17598&show-proto-sidebar=1"
+                        target="_blank">
+                        https://www.figma.com/proto/Qyc4ILiq2WVGjHRlbMOPM/GOLAJO
+                    </a>
+                </p>
+            </section>
+
+        </div><!-- /proj-body -->
+
+        <footer>wooju.lee77@gmail.com</footer>
+    </main>
+
+
+    <!-- ─── JAVASCRIPT ────────────────────────────────────────── -->
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () =>
+            document.getElementById('drawer').classList.add('open'));
+        document.getElementById('closeDrawer').addEventListener('click', closeMenu);
+        function closeMenu() { document.getElementById('drawer').classList.remove('open'); }
+    </script>
+</body>
+
+</html>
