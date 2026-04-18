@@ -12,17 +12,7 @@
 <!-- ─── SIDEBAR ─────────────────────────────────────────── -->
 <aside class="sidebar">
   <div class="sidebar-logo">
-    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
-      <circle r="5" fill="#C8A84B">
-        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#oval-path"/>
-        </animateMotion>
-      </circle>
-      <defs>
-        <path id="oval-path" d="M 16,6 Q 2,6 2,20 Q 2,34 16,34 L 64,34 Q 78,34 78,20 Q 78,6 64,6 Z"/>
-      </defs>
-    </svg>
+    <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-img" /></a>
   </div>
 
   <a href="about.html" class="nav-standalone">About</a>
@@ -41,17 +31,15 @@
   <div class="nav-section">
     <span class="nav-label">Interactive</span>
     <ul class="nav-links">
-      <li><a href="index.html">Pig game</a></li>
-      <li><a href="index.html">LIKELION @ UCD</a></li>
-      <li><a href="index.html">My collections</a></li>
+      <li><a href="govdeals.html">GovDeals Redesign</a></li>
+      <li><a href="piggame.html">Pig game</a></li>
     </ul>
   </div>
 
   <div class="nav-section">
     <span class="nav-label">Graphics</span>
     <ul class="nav-links">
-      <li><a href="index.html">Bibimbap</a></li>
-      <li><a href="index.html">Rex Orange County</a></li>
+      <li><a href="zine.html">Bibimbap</a></li>
       <li><a href="book.html" class="active">INFINITY</a></li>
     </ul>
   </div>
@@ -60,7 +48,7 @@
     <span class="nav-label">Contact</span>
     <ul class="nav-links">
       <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
-      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/in/wooju-lee-441898273" target="_blank">LinkedIn</a></li>
     </ul>
   </div>
 </aside>
@@ -68,14 +56,7 @@
 <!-- ─── MOBILE HEADER ─────────────────────────────────────── -->
 <header class="mobile-nav">
   <div class="mobile-logo">
-    <svg class="logo-svg" width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="2" y="6" width="76" height="28" rx="14" stroke="#1a1a1a" stroke-width="2" fill="white"/>
-      <circle r="5" fill="#C8A84B">
-        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#oval-path"/>
-        </animateMotion>
-      </circle>
-    </svg>
+    <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-img" /></a>
   </div>
   <button class="hamburger" id="menuBtn" aria-label="Open menu">
     <span></span><span></span><span></span>
@@ -98,16 +79,14 @@
   <div class="nav-section">
     <span class="nav-label">Interactive</span>
     <ul class="nav-links">
-      <li><a href="index.html" onclick="closeMenu()">Pig game</a></li>
-      <li><a href="index.html" onclick="closeMenu()">LIKELION @ UCD</a></li>
-      <li><a href="index.html" onclick="closeMenu()">My collections</a></li>
+      <li><a href="govdeals.html" onclick="closeMenu()">GovDeals Redesign</a></li>
+      <li><a href="piggame.html" onclick="closeMenu()">Pig game</a></li>
     </ul>
   </div>
   <div class="nav-section">
     <span class="nav-label">Graphics</span>
     <ul class="nav-links">
-      <li><a href="index.html" onclick="closeMenu()">Bibimbap</a></li>
-      <li><a href="index.html" onclick="closeMenu()">Rex Orange County</a></li>
+      <li><a href="zine.html" onclick="closeMenu()">Bibimbap</a></li>
       <li><a href="book.html" onclick="closeMenu()">INFINITY</a></li>
     </ul>
   </div>
@@ -115,7 +94,7 @@
     <span class="nav-label">Contact</span>
     <ul class="nav-links">
       <li><a href="mailto:wooju.lee77@gmail.com">Email</a></li>
-      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/in/wooju-lee-441898273" target="_blank">LinkedIn</a></li>
     </ul>
   </div>
 </div>
@@ -136,7 +115,8 @@
 
       <p class="book-hint">Click the pages or press ← → to flip</p>
 
-      <div class="book-scene">
+      <div class="book-scene cover-clip-l cover-pos-l">
+        <div class="book-clip-wrap" id="bookClipWrap">
         <div class="book" id="book">
 
           <!-- Spine gradient overlay -->
@@ -231,6 +211,7 @@
           </div>
 
         </div><!-- /#book -->
+        </div><!-- /.book-clip-wrap -->
 
         <!-- Cover masks: siblings of #book, never inside the 3D context -->
         <div id="bookLeftMask"  class="book-left-mask visible"></div>

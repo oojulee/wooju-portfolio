@@ -9,7 +9,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --accent:    #C8A84B;
+  --accent:    #919191;
   --text:      #1a1a1a;
   --muted:     #888;
   --border:    #e8e8e8;
@@ -47,7 +47,7 @@ body {
 }
 
 .sidebar-logo { margin-bottom: 40px; line-height: 0; }
-.logo-svg     { display: block; overflow: visible; }
+.logo-img     { display: block; height: 40px; width: auto; }
 
 /* ─── NAV ─────────────────────────────────────────────── */
 .nav-section { margin-bottom: 22px; }
@@ -249,12 +249,19 @@ footer {
 ════════════════════════════════════════════════════════ */
 
 .resume-header {
-  padding: 64px 64px 40px;
-  border-bottom: 1px solid var(--border);
+  padding: 64px 64px 20px;
 }
 .resume-header h1 {
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 700; line-height: 1.1;
+}
+.resume-contact {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  font-size: 13px;
+  color: var(--muted);
 }
 
 .resume-content {
@@ -276,9 +283,7 @@ footer {
 .resume-section-title {
   font-size: 15px; font-weight: 600;
   color: var(--accent);
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   letter-spacing: 0.01em;
 }
 
@@ -433,6 +438,20 @@ footer {
   text-transform: uppercase;
 }
 
+.proj-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.proj-bullets {
+  list-style: disc;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
 .proj-h4 {
   font-size: 14px;
   font-weight: 700;
@@ -561,6 +580,7 @@ footer {
   .proj-img-grid-2 { grid-template-columns: 1fr; }
   .proj-img-grid-4 { grid-template-columns: 1fr 1fr; }
   .proj-hifi-grid  { grid-template-columns: 1fr 1fr; }
+  .proj-two-col    { grid-template-columns: 1fr; }
 }
 /* ─── Project page real images ────────────────────────── */
 
@@ -847,41 +867,44 @@ footer {
   perspective-origin: center center;
 }
 
+/* ─── Clip wrapper (no preserve-3d — clip-path works here) */
+.book-clip-wrap {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  transition: transform 0.45s ease;
+}
+
 /* ─── Book frame ──────────────────────────────────────── */
 .book {
   position: relative;
   width: 100%;
-  max-width: 840px;
-  margin: 0 auto;
   aspect-ratio: 1017 / 512; /* exact double-page ratio (1017 × 2 : 1024) */
   background: #ede9e3;      /* paper interior */
   transform-style: preserve-3d;
   cursor: pointer;
   user-select: none;
-  clip-path: inset(0);   /* default: no clip — required for smooth clip-path transition */
-  transition: transform 0.45s ease, clip-path 0.45s ease;
 }
 
 /* ─── Spine gradient (removed — no shadows) ───────────── */
 .book-spine { display: none; }
 
 /* ─── Cover states — single-page appearance ────────────
-   clip-path crops the book to one half; translateX centres
-   the visible half in the scene. clip-path also crops the
-   box-shadow, so no shadow bleeds on the hidden side.
-   Both transitions are on .book itself (declared above).   */
+   clip-path crops the wrapper to one half; translateX centres
+   the visible half in the scene.
+   clip-path snaps instantly; transform animates via .book-clip-wrap transition. */
 
-/* ── Clip classes (instant snap, no CSS transition) ────── */
+/* ── Clip classes (instant snap — applied to wrapper, not preserve-3d element) */
 /* cover-clip-l: hide the empty left half (front-cover state) */
-.book-scene.cover-clip-l .book { clip-path: inset(0 0 0 50%); }
+.book-scene.cover-clip-l .book-clip-wrap { clip-path: inset(0 0 0 50%); }
 /* cover-clip-r: hide the empty right half (back-cover state) */
-.book-scene.cover-clip-r .book { clip-path: inset(0 50% 0 0); }
+.book-scene.cover-clip-r .book-clip-wrap { clip-path: inset(0 50% 0 0); }
 
-/* ── Centering classes (smoothly animated via .book transition) */
+/* ── Centering classes (smoothly animated via .book-clip-wrap transition) */
 /* cover-pos-l: slide right half into centre */
-.book-scene.cover-pos-l .book { transform: translateX(-25%); }
+.book-scene.cover-pos-l .book-clip-wrap { transform: translateX(-25%); }
 /* cover-pos-r: slide left half into centre */
-.book-scene.cover-pos-r .book { transform: translateX(25%); }
+.book-scene.cover-pos-r .book-clip-wrap { transform: translateX(25%); }
 
 /* No spine divider when only one page is clipped in */
 .book-scene.cover-clip-l .book-spine,
