@@ -37,7 +37,7 @@ body {
   top: 0; left: 0;
   width: var(--sidebar-w);
   height: 100vh;
-  padding: 36px 28px;
+  padding: 12px 28px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--border);
@@ -46,7 +46,7 @@ body {
   overflow-y: auto;
 }
 
-.sidebar-logo { margin-bottom: 40px; line-height: 0; }
+.sidebar-logo { margin-bottom: 4px; line-height: 0; }
 .logo-img     { display: block; height: 40px; width: auto; }
 
 /* ─── NAV ─────────────────────────────────────────────── */
